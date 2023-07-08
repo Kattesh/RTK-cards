@@ -54,10 +54,8 @@
 
 .thumb:hover {
   cursor: pointer;
-
-  background-color: var(--color-accent-500);
+  background-color: var(--color-light-100);
   border: solid 4px var(--color-accent-500);
-  border-radius: 10px;
   box-shadow: 0 3px 10px white;
 }
 
