@@ -28,7 +28,7 @@ export const SliderRange = ({
     <div className={s.container}>
       <div>
         <Typography variant={'body1'} className={s.value}>
-          {min}
+          {rangeValue[0]}
         </Typography>
       </div>
 
