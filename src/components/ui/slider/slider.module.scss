@@ -54,7 +54,7 @@
 
 .thumb:hover {
   cursor: pointer;
-  box-shadow: 0 2px 2px white;
+  border: solid 6px var(--color-accent-500);
 }
 
 .thumb:focus {
