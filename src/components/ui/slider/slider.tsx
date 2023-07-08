@@ -8,18 +8,27 @@ type SliderPropsType = {
   max: number
   min: number
   step: number
+  onValueCommit: (values: [number, number]) => void
   rangeValue: number[]
   disabled?: boolean
+  value: [number, number]
 }
 
-export const SliderRange = ({ min, max, step, rangeValue }: SliderPropsType) => {
-  const handleChange = () => {}
+export const SliderRange = ({
+  min,
+  max,
+  step,
+  rangeValue,
+  onValueCommit,
+  value,
+}: SliderPropsType) => {
+  const onChange = () => {}
 
   return (
     <div className={s.container}>
       <div>
         <Typography variant={'body1'} className={s.value}>
-          {rangeValue[0]}
+          {min}
         </Typography>
       </div>
 
@@ -29,7 +38,9 @@ export const SliderRange = ({ min, max, step, rangeValue }: SliderPropsType) => 
         max={max}
         min={min}
         step={step}
-        onChange={handleChange}
+        onValueCommit={onValueCommit}
+        onValueChange={onChange}
+        value={value}
       >
         <Slider.Track className={s.track}>
           <Slider.Range className={s.range} />
