@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from './'
+import { Icon } from '../../../assets/icons/Icon.tsx'
 
+import { Button } from './'
 const meta = {
   title: 'Components/Button',
   component: Button,
@@ -21,6 +22,18 @@ export const Primary: Story = {
   args: {
     variant: 'primary',
     children: 'Primary Button',
+    disabled: false,
+  },
+}
+export const PrimaryWithIcon: Story = {
+  args: {
+    variant: 'primary',
+    children: (
+      <>
+        <Icon />
+        Sign Out
+      </>
+    ),
     disabled: false,
   },
 }

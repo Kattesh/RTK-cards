@@ -1,0 +1,43 @@
+.card {
+  max-width: 420px;
+  padding: 33px 36px 29px;
+
+  > h1 {
+    margin-bottom: 27px;
+    text-align: center;
+  }
+}
+
+.textField:not(:first-of-type) {
+  margin-top: 24px;
+}
+
+.button {
+  margin-top: 60px;
+}
+
+.description {
+  margin-top: 20px;
+  color: var(--color-light-900);
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 11px;
+
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-accent-500);
+  text-align: center;
+
+  &:hover {
+    color: var(--color-accent-300);
+  }
+
+  &:active {
+    color: var(--color-accent-700);
+  }
+}

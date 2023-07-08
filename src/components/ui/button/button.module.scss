@@ -1,31 +1,79 @@
-* {
-  padding: 6px 28px;
+@mixin button {
+  all: unset;
 
-  font-size: var(--font-size-s);
+  cursor: pointer;
+  user-select: none;
+
+  display: inline-flex;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 0.375rem 1.75rem;
+
+  font-size: 1rem;
   font-weight: var(--font-weight-bold);
+  line-height: 24px;
+  color: var(--color-light-100);
+  text-align: center;
+  text-decoration: none;
 
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
 }
 
 .primary {
+  @include button;
+
   background-color: var(--color-accent-500);
   box-shadow: 0 4px 18px 0 rgb(140 97 255 / 35%);
+
+  &:hover:not(&:disabled) {
+    background-color: var(--color-accent-300);
+  }
+
+  &:active:not(&:disabled) {
+    background-color: var(--color-accent-700);
+  }
 }
 
 .secondary {
+  @include button;
+
   background-color: var(--color-dark-300);
-  box-shadow: 0 4px 4px 0 rgba(77 86 96 /13%);
+  box-shadow: 0 4px 4px 0 rgba(77 86 96 / 13%);
+
+  &:hover:not(&:disabled) {
+    background-color: var(--color-dark-100);
+  }
+
+  &:active:not(&:disabled) {
+    background-color: var(--color-dark-500);
+  }
 }
 
 .tertiary {
+  @include button;
+
   color: var(--color-accent-500);
   background-color: transparent;
   border: 1px solid var(--color-accent-500);
+
+  &:hover:not(&:disabled) {
+    background-color: var(--color-dark-500);
+  }
 }
 
 .link {
-  color: var(--color-accent-500);
+  @include button;
+
+  color: var(--color-accent-700);
   background-color: transparent;
 }
 

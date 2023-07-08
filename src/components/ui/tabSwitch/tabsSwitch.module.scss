@@ -1,0 +1,44 @@
+.label {
+  margin: 0 0 20px 20px;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  display: flex;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+.trigger {
+  user-select: none;
+
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  height: 45px;
+  padding: 6px 24px;
+
+  font-size: 15px;
+  line-height: 1;
+  color: var(--color-light-100);
+
+  background-color: transparent;
+  border: 1px solid var(--color-dark-300);
+  border-radius: 2px;
+}
+
+.trigger:hover {
+  color: var(--color-light-100);
+  background: var(--color-dark-300);
+}
+
+.trigger:active {
+  color: var(--color-light-100);
+  background: var(--color-accent-500);
+}

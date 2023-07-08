@@ -1,0 +1,25 @@
+.table {
+  border-collapse: collapse;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.headCell {
+  padding: 6px 24px;
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--color-light-300);
+}
+
+.tableCell {
+  padding: 6px 24px;
+  font-size: var(--font-size-s);
+  background-color: var(--color-light-500);
+  border-bottom: 1px solid darkgrey;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}

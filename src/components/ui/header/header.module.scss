@@ -1,0 +1,22 @@
+.header {
+  padding: 12px 0;
+  background-color: var(--color-dark-700);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatarContainer {
+  cursor: pointer;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.name {
+  user-select: none;
+  border-bottom: 1px dotted var(--color-light-100);
+}
